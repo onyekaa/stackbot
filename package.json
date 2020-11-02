@@ -1,0 +1,14 @@
+{
+  "name": "stackbot",
+  "version": "0.0.1",
+  "description": "A StackOverflow clone to work with Slack built with Altis",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Onyeka Aghanenu",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.9.6"
+  }
+}

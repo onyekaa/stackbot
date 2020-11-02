@@ -1,0 +1,48 @@
+{
+    "name": "onyekaa/stackybot",
+    "description": "A Stacklike site for developer questions",
+    "type": "project",
+    "require": {
+        "altis/altis": "^5.0.0"
+    },
+    "require-dev": {
+        "altis/local-chassis": "^5.0.0",
+        "altis/local-server": "^5.0.0"
+    },
+    "authors": [
+        {
+            "name": "Onyeka Aghanenu",
+            "email": "onyekaag@gmail.com"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "content/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "content/themes/stackybot/": [
+                "type:wordpress-theme"
+            ]
+        },
+    "altis": {
+        "modules": {
+          "analytics": {
+            "native": true,
+            "max_index_age": 70
+          },
+          "security": {
+            "browser": false
+          }
+        }
+      }
+    },
+    "config": {
+        "platform": {
+            "php": "7.2",
+            "ext-mbstring": "7.2.30"
+        }
+    }
+}
