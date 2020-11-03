@@ -4,6 +4,11 @@ Author: Onyeka Aghanenu
 
 This file is yours to edit and replace.
 */
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
 
 :root {
 	--color-cream: #fffef6;

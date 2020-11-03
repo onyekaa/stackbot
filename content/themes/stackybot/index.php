@@ -22,9 +22,23 @@ if ( file_exists( '/etc/chassis-constants' ) ) {
 }
 
 ?>
-	<div id="welcome">
-		<h2>StackyBot is live!</h2>
+	<div id="" class="container mx-auto">
+		<h2 class="text-2xl text-cyan ">StackyBot is live!</h2>
 		<p><?php esc_html_e( 'Stackybot is ready to go.', 'stackybot' ); ?></p>
+		<hr/>
+		<?php
+			while ( have_posts() ):
+				the_post();
+				?>
+				<div class="my-4" id="post-<?php the_ID() ?>">
+					<h2 class="text-xl text-cyan"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
+					<div>
+						<?php the_content() ?>
+					</div>
+				</div>
+			<?php
+			endwhile;
+		?>
 
 	</div>
 <?php
